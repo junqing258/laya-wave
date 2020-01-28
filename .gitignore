@@ -8,3 +8,4 @@ node_modules/
 /bin/libs/min
 *.log
 tools/ProjectExportTools/*
+tools/*.zip
