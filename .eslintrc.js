@@ -1,9 +1,9 @@
 module.exports = {
     parser: '@typescript-eslint/parser',
     env: {
-      "browser": true,
-      "node": true,
-      "es6": true
+        "browser": true,
+        "node": true,
+        "es6": true
     },
     extends: [
         'plugin:@typescript-eslint/recommended',
@@ -11,11 +11,11 @@ module.exports = {
     ],
     plugins: ['@typescript-eslint'],
     rules: {
-      "@typescript-eslint/no-var-requires": 0,
-      "@typescript-eslint/explicit-function-return-type": 0,
-      "@typescript-eslint/interface-name-prefix": 0,
+        "@typescript-eslint/no-var-requires": 0,
+        "@typescript-eslint/explicit-function-return-type": 0,
+        "@typescript-eslint/interface-name-prefix": 0,
     },
-  };
+};
 
 // {   
 //     "parser": "babel-eslint",
