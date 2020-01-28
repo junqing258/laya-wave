@@ -1,0 +1,72 @@
+{
+  "name": "laya-rx",
+  "version": "1.0.0",
+  "description": "laya webpack es6",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^2.6.1",
+    "crypto-js": "^3.1.9-1",
+    "jsencrypt": "^3.0.0-rc.1",
+    "mockjs": "^1.0.1-beta3",
+    "node-rsa": "^1.0.1",
+    "primus": "^7.2.2",
+    "requirejs": "^2.3.6",
+    "ws": "^6.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-decorators": "^7.1.2",
+    "@babel/plugin-transform-async-to-generator": "^7.1.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "art-template": "^4.13.2",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^25.0.0",
+    "babel-loader": "^8.0.4",
+    "babel-preset-flow": "^6.23.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-babel": "^5.2.1",
+    "eslint-plugin-flowtype": "^3.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "exports-loader": "^0.7.0",
+    "flow-bin": "^0.84.0",
+    "fs-extra": "^7.0.1",
+    "glob": "^7.1.6",
+    "html-webpack-plugin": "^3.2.0",
+    "jasmine-core": "^3.5.0",
+    "jest": "^25.0.0",
+    "karma": "^4.4.1",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-coverage": "^2.0.1",
+    "karma-jasmine": "^3.1.0",
+    "karma-requirejs": "^1.1.0",
+    "karma-static": "^1.0.1",
+    "karma-webpack": "^4.0.2",
+    "regenerator-runtime": "^0.12.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-notifier": "^1.7.0",
+    "workbox-build": "^3.6.3",
+    "xmldom": "^0.2.1",
+    "yargs": "^15.1.0"
+  },
+  "scripts": {
+    "dev": "set NODE_ENV=development&&webpack",
+    "start": "set NODE_ENV=development&&webpack-dev-server --open",
+    "build": "set NODE_ENV=production&&webpack",
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/junqing258/laya-rx.git"
+  },
+  "author": "Junqing <1551486328@qq.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junqing258/laya-rx/issues"
+  },
+  "homepage": "https://github.com/junqing258/laya-rx#readme"
+}

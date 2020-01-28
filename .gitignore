@@ -1,0 +1,10 @@
+node_modules/
+.vscode/
+.vs/
+/bin/*
+!/bin/libs
+!/bin/index.html
+!/bin/unpack.json
+/bin/libs/min
+*.log
+tools/ProjectExportTools/*

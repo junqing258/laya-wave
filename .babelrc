@@ -1,0 +1,13 @@
+{
+    "presets": [
+      [ "@babel/preset-env", { "modules": false, "useBuiltIns": "entry" } ]
+    ],
+    "plugins": [
+        [ "@babel/plugin-transform-async-to-generator", {
+          "module": "bluebird",
+          "method": "coroutine"
+        } ],
+        ["@babel/plugin-proposal-decorators", { "legacy": true }],
+        ["@babel/plugin-proposal-class-properties", { "loose": true }]
+    ]
+}
