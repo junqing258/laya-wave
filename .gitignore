@@ -1,6 +1,7 @@
 node_modules/
 .vscode/
 .vs/
+src/ui/layaUI.max.all.*
 /bin/*
 !/bin/libs
 !/bin/index.html
