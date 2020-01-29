@@ -7,9 +7,8 @@ import { COMMON_ASSET } from 'const/assets';
 const { Stage, Handler } = Laya;
 
 export default function App() {
-  var stage;
   Laya.init(1334, 750, Laya.WebGL);
-  stage = Laya.stage;
+  const stage = Laya.stage;
   stage.scaleMode = Stage.SCALE_FIXED_WIDTH;
   stage.alignH = Stage.ALIGN_CENTER;
   stage.alignV = Stage.ALIGN_MIDDLE;

@@ -11,9 +11,12 @@ module.exports = {
     ],
     plugins: ['@typescript-eslint'],
     rules: {
+        "prefer-rest-params": 0,
         "@typescript-eslint/no-var-requires": 0,
         "@typescript-eslint/explicit-function-return-type": 0,
         "@typescript-eslint/interface-name-prefix": 0,
+        "@typescript-eslint/no-this-alias": 0,
+        "@typescript-eslint/camelcase": 1
     },
 };
 
