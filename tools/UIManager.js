@@ -22,7 +22,6 @@ const pagePath = path.resolve(__dirname, "../laya/pages/");
 		const uiTpl = template(__dirname + "/tpl/ui.art", data);
 		uiTpls.push(uiTpl);
 	});
-	viewRegs = Array.from(new Set(viewRegs));
 	const uiMaxTpl = template(__dirname + "/tpl/ui-max.art", { tpls: uiTpls, viewRegs });
 	fs.writeFileSync(path.resolve(__dirname, "../src/ui/layaUI.max.all.ts"), uiMaxTpl);
 })();

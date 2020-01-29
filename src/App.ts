@@ -20,6 +20,6 @@ export default function App() {
     COMMON_ASSET,
     Handler.create(null, () => {
       SenseManager.loadSense('/loadding');
-    })
+    }),
   );
 }
