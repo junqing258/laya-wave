@@ -28,7 +28,6 @@ const { execSync, spawn, exec } = child_process;
   // console.log(data);
   const frames = Object.keys(data.frames);
   const outData = {};
-  //<char id="48" x="0" y="0" width="13" height="19" xoffset="0" yoffset="0" xadvance="13" page="0" chnl="15" />
   let maxW = 0,
     maxH = 0;
   outData.chars = frames.map(fname => {

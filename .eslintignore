@@ -4,3 +4,4 @@ bin/**
 src/serviceWorker.ts
 src/**/__tests__/**
 *.d.ts
+src/ui/layaUI.max.all.ts
