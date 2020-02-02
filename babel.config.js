@@ -9,7 +9,7 @@ module.exports = {
         debug: false,
       },
     ],
-    ['@babel/preset-typescript'],
+    ['@babel/preset-typescript', { allowNamespaces: true }],
   ],
   env: {
     development: {
@@ -30,6 +30,7 @@ module.exports = {
         useESModules: false,
       },
     ],
+    ['@babel/plugin-proposal-export-default-from'],
     ['@babel/plugin-syntax-dynamic-import'],
     ['@babel/plugin-transform-async-to-generator'],
     ['@babel/plugin-proposal-decorators', { legacy: true }],

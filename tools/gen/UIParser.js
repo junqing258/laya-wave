@@ -44,10 +44,9 @@ module.exports = class UIParser {
 
   collectVars(obj, arr) {
     if (obj.animations) {
-      var i = 0,
+      let i = 0,
         len = 0;
-      var animations;
-      animations = obj.animations;
+      const animations = obj.animations;
       len = animations.length;
       for (i = 0; i < len; i++) {
         if (animations[i].nodes && animations[i].nodes.length > 0)
@@ -72,7 +71,7 @@ module.exports = class UIParser {
   }
 
   collectRegView(obj, arr) {
-		const { type } = obj;
+    const { type } = obj;
     if (config.viewMap[type]) {
       if (!arr.find(v => v[0] === type)) {
         arr.push([type, config.viewMap[type]]);
@@ -84,7 +83,7 @@ module.exports = class UIParser {
   collectUIObj(obj, newObj) {
     const keysNeeded = ['type', 'props' /*"child", "compId", "animations"*/];
     Object.keys(obj).forEach(key => {
-      var value = obj[key];
+      const value = obj[key];
       if (!keysNeeded.includes(key)) return;
       if (key === 'props') {
         ['layers', 'layer', 'sceneWidth', 'sceneHeight', 'sceneColor', 'sceneBg', 'styleSkin'].forEach(
@@ -107,10 +106,10 @@ module.exports = class UIParser {
 
   parseObj(obj, uiObj, regCb) {
     regCb(obj, uiObj);
-    var list = obj.child;
+    const list = obj.child;
     if (list && list.length) {
       uiObj.child = [];
-      for (var j = 0, n = list.length; j < n; j++) {
+      for (let j = 0, n = list.length; j < n; j++) {
         uiObj.child[j] = {};
         this.parseObj(list[j], uiObj.child[j], regCb);
       }

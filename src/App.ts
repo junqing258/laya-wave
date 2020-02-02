@@ -1,5 +1,5 @@
-import 'utils/laya.custom.js';
-import 'ui/layaUI.max.all.js';
+import 'utils/laya.custom';
+import 'ui/layaUI.max.all';
 
 import SenseManager from 'utils/SenseManager';
 import { COMMON_ASSET } from 'const/assets';

@@ -1,5 +1,5 @@
-export module ui.{{pack}} {
-    {{each imports}}import {{$value[0]}} = {{$value[1]}};
+export namespace ui.{{pack}} {
+    {{each imports}}const {{$value[0]}} = {{$value[1]}};
     {{/each}}
     export class {{className}} extends {{classType}} {
         {{each vars}}public {{$value[0]}}: {{$value[1]}};
