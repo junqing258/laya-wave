@@ -3,27 +3,27 @@
 		"experimentalDecorators": true,
 		"target": "es5",
 		"baseUrl": "./src",
-    "paths": {
-      "@/*": ["src/*"]
+		"paths": {
+			"@/*": ["src/*"]
 		},
 		"outDir": "./bin",
 		"lib": [
-      "dom",
-      "esnext"
-    ],
-    "allowJs": true,
+			"dom",
+			"esnext"
+		],
+		"allowJs": true,
 		"skipLibCheck": true,
 		"esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
 		"forceConsistentCasingInFileNames": true,
 		"module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
 	},
-	"files":[
+	"files": [
 		"libs/LayaAir.d.ts",
 		"libs/rx.d.ts"
 	],

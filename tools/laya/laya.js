@@ -258,3 +258,6 @@ var Laya = (window.Laya = (function(window, document) {
 
 	return Laya;
 })(window, document));
+
+
+
