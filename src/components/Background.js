@@ -1,5 +1,5 @@
 
-import { PubSub } from "ctrl/playCtrl";
+// import { PubSub } from "ctrl/playCtrl";
 
 const { Tween, Ease, Event } = Laya;
 
@@ -33,10 +33,14 @@ export default class Background extends Laya.Sprite {
         
         let i = 0;
         const interval = 60, degree = 2.5;
-        PubSub.on("SHOCK_LINE", this, ()=> {
+        /*PubSub.on("SHOCK_LINE", this, ()=> {
             i = 0;
             Laya.timer.loop(interval, this, loop);
-        });
+        });*/
+
+        let text = new Laya.Label();
+        text.dataSource = { text: "test", fontSize: 46 };
+        this.addChild(text);
 
         function loop() {
             if (i>=jello.length) return Laya.timer.clear(self, loop); 

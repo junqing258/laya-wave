@@ -2,6 +2,7 @@ import 'utils/laya.custom';
 import 'ui/layaUI.max.all';
 
 import SenseManager from 'utils/SenseManager';
+import LoaddingSense from "senses/LoaddingSense";
 import { COMMON_ASSET } from 'const/assets';
 
 const { Stage, Handler } = Laya;

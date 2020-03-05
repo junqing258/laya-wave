@@ -11,7 +11,7 @@ describe("Background", function() {
 		setTimeout(() => {
 			bg.destroy();
 			done();
-		}, 1000);
+		}, 3000);
 	});
 
 });
